@@ -33,7 +33,76 @@
         <input type="int" steps="Steps"><br>
       </form>
     
-    <button>Calculate CO2 Offset</button>
+     <title>carbon footprint converter</title>
+    <br> <br> <br> <br> <br>
+
+    <!-- Bootstrap -->
+   
+
+    <style>
+    #lbl
+    {
+        position: absolute;
+        top: 5%;
+        left 20%; 
+        color:blue;
+        font-size: 
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+    </style>
+   
+
+    <Script>
+
+
+
+
+
+    function carbon()
+    {
+
+
+    var x = document.getElementById("x").value;
+    var carbon = x * (8887)/453.59723;
+
+    document.getElementById("result").innerHTML = "A gallon of gasoline weighs 6.3 pounds. When your gas amount is combusted, the carbon combines with oxygen and the weight of the CO2 emitted is " +   carbon  +  "pounds  of Co2 " ;
+
+ }
+
+
+    </script>
+    <br><br><br>
+    
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <p id = "lbl"> CarbonFootprintCoverter</p>
+    Enter car mileage <input type = "text" id ="x"></input>
+    <br><br><br>
+    <p id = "result" ></p>
+    <button id = "btn" onclick = "carbon()">Convert</button>
     
     </div>
 
